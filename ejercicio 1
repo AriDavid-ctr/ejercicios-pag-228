@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+public class ListaGente{
+    public static void main(String[]args){
+        ArrayList<String>Gente= new ArrayList<>();
+        Gente.add("carlos");
+        Gente.add("marcela");
+        Gente.add("Carla");
+        Gente.add("pedro");
+        Gente.add("marcos");
+        Gente.add("maria");
+        System.out.println("nombres de las personas: ");
+        for(String nombre:Gente){
+            System.out.println(nombre);
+        }
+    }
+}
