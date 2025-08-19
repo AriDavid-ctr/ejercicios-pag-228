@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Random;
+public class Calculos{
+    public static void main(String[]args){
+        Random random=new Random();
+        int tamanio=10+random.nextInt(11);
+        ArrayList<Integer>numeros= new ArrayList<>();
+       for(int i=0;i<tamanio;i++){
+           numeros.add(random.nextInt(101));
+       }
+       int suma=0;
+       int maximo=Integer.MIN_VALUE;
+       int minimo=Integer.MAX_VALUE;
+       for(int num:numeros){
+           suma+=num;
+           if(num>maximo)maximo=num;
+           if(num<minimo)minimo=num;
+       }
+       double media=(double) suma/numeros.size();
+        System.out.println("numeros generados: "+numeros);
+        System.out.println("cantidad: "+numeros.size());
+        System.out.println("suma: "+suma);
+        System.out.println("media: "+media);
+        System.out.println("maximo: "+maximo);
+        System.out.println("minimo: "+minimo);
+        
+    }
+}
